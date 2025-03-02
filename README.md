@@ -1,3 +1,15 @@
+# This is Michael Mirisciotta's Create-next-app with Tailwind optimized with Prisma PostgreSQL Backend. 
+
+1. Create Repository with template, Create Vercel project. Link to vercel project. Deploy
+2. ?? Should be already installed ??? Install vercel CLI in Terminal: npm i -g vercel@latest
+3. ?? Should be already installed ??? npx prisma generate
+4. Create PostgreSQL Database
+5. USE VERCEL CLI Terminal Write: vercel link 
+6. Link your project name that you named in the vercel console.
+7. USE VERCEL CLI Terminal Write: vercel env pull .env.local
+8. Rename .envlocal to .env and change on .gitignore
+9. See your prisma models Terminal Write: npx prisma studio
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

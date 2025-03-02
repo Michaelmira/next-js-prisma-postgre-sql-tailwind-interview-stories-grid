@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -20,9 +21,34 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex`}
       >
-        {children}
+        {/* Navbar */}
+        <nav className="w-60 bg-gray-800 text-white p-4 min-h-screen">
+          <h1 className="text-xl font-bold mb-6">Navigate</h1>
+          <ul className="space-y-2">
+            <li>
+              <Link
+                href="/"
+                className="block px-3 py-2 rounded hover:bg-gray-700"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/add-post"
+                className="block px-3 py-2 rounded hover:bg-gray-700"
+              >
+                Add Post
+              </Link>
+            </li>
+          </ul>
+        </nav>
+        {/* Main Content */}
+        <main className="flex-1 p-4">
+          {children}
+        </main>
       </body>
     </html>
   );

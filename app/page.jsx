@@ -30,13 +30,16 @@ export default async function Home() {
         {
           posts.map((post) => {
             return (
-              <Post
+
+              <Link href={`/post-details/${post.id}`}><Post
                 key={post.id}
                 id={post.id}
                 title={post.title}
                 content={post.content}
                 authorName={post.author?.name}
               />
+              </Link>
+
             )
           })
         }
