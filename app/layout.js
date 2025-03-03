@@ -37,10 +37,18 @@ export default function RootLayout({ children }) {
             </li>
             <li>
               <Link
-                href="/"
+                href="/auth/signin"
                 className="block px-3 py-2 rounded hover:bg-gray-700"
               >
                 Login
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/auth/signup"
+                className="block px-3 py-2 rounded hover:bg-gray-700"
+              >
+                Signup
               </Link>
             </li>
             <li>
