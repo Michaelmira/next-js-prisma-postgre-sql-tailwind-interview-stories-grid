@@ -10,6 +10,11 @@
 8. Rename .envlocal to .env and change on .gitignore
 9. See your prisma models Terminal Write: npx prisma studio
 
+### Notes
+
+To wipe Prisma Database use Terminal Command: npx prisma migrate reset
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

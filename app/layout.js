@@ -37,6 +37,14 @@ export default function RootLayout({ children }) {
             </li>
             <li>
               <Link
+                href="/"
+                className="block px-3 py-2 rounded hover:bg-gray-700"
+              >
+                Login
+              </Link>
+            </li>
+            <li>
+              <Link
                 href="/add-post"
                 className="block px-3 py-2 rounded hover:bg-gray-700"
               >
